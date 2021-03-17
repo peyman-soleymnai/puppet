@@ -7,7 +7,7 @@ node 'client1.puppet' {
 
 class linux {
 
-  $admintool = [ 'ntp', 'nano', 'httpd']
+  $admintool = [ 'ntpd', 'nano', 'httpd']
     
   $httpservice = $osfamily ? {
     'redhat' => 'httpd',
